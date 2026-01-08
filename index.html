@@ -4,15 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Azuda – Model Railway Templates</title>
-  <meta name="description" content="Azuda makes original model railway templates designed and refined through real modelling use. Browse the full range on our eBay, Etsy, and Amazon shops." />
+  <title>OO Gauge Track Laying Radius Templates & 67mm Spacers | Azuda</title>
+  <meta name="description" content="OO gauge track laying radius templates (2nd–5th radius) plus 67mm double track spacing templates. Practical 3D printed tools for accurate curves, consistent parallel spacing, and easier pinning during track laying." />
   <link rel="canonical" href="https://azuda.co.uk/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Azuda – Model Railway Templates" />
-  <meta property="og:description" content="Original model railway templates designed and refined through real modelling use. Browse the full range on our eBay, Etsy, and Amazon shops." />
+  <meta property="og:title" content="OO Gauge Track Laying Radius Templates & 67mm Spacers | Azuda" />
+  <meta property="og:description" content="Practical 3D printed track-laying tools for accurate OO/HO curves and consistent 67mm parallel spacing. Compatible with Code 75 & Code 100." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://azuda.co.uk/" />
+  <meta property="og:image" content="https://azuda.co.uk/images/azuda-ebay-banner.png" />
+
+  <!-- Optional: Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OO Gauge Track Laying Radius Templates & 67mm Spacers | Azuda" />
+  <meta name="twitter:description" content="3D printed OO/HO track laying templates for accurate curves and 67mm spacing." />
+  <meta name="twitter:image" content="https://azuda.co.uk/images/azuda-ebay-banner.png" />
 
   <style>
     :root { color-scheme: light; }
@@ -25,20 +32,12 @@
       background: #fff;
     }
     a { color: inherit; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
-    header { padding: 28px 0 10px; }
-    .brand {
-      display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
-    }
-    .logo {
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      font-size: 28px;
-    }
-    .tagline {
-      font-size: 15px;
-      color: #444;
-    }
+    .wrap { max-width: 1020px; margin: 0 auto; padding: 24px; }
+    header { padding: 18px 0 10px; }
+    .brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+    .logo { font-weight: 800; letter-spacing: 0.2px; font-size: 28px; }
+    .tagline { font-size: 15px; color: #444; }
+
     .hero {
       margin-top: 14px;
       padding: 22px;
@@ -46,8 +45,23 @@
       border-radius: 14px;
       background: #fafafa;
     }
-    h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -0.3px; }
+    h1 { font-size: 32px; margin: 0 0 10px; letter-spacing: -0.3px; }
     p { margin: 10px 0; }
+    .muted { color: #666; }
+
+    .banner {
+      margin-top: 14px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #e6e6e6;
+      background: #fff;
+    }
+    .banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .btns {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -67,21 +81,50 @@
     .btn:active { transform: translateY(1px); }
     .btn strong { display: block; font-size: 15px; }
     .btn small { display: block; margin-top: 6px; color: #555; }
+
     section { padding: 18px 0; }
     h2 { font-size: 20px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 16px 0 8px; }
+
     ul { margin: 10px 0 0; padding-left: 18px; }
-    .cards {
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 14px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f4f4f4;
+    }
+    .card .pad { padding: 12px 14px; }
+    .card .pad strong { display: block; }
+    .pillrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .pill {
+      border: 1px solid #e6e6e6;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      background: #fff;
+      color: #333;
+    }
+
+    .cards2 {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
       margin-top: 10px;
     }
-    .card {
-      border: 1px solid #e6e6e6;
-      border-radius: 14px;
-      padding: 14px;
-      background: #fff;
-    }
+
     footer {
       margin-top: 18px;
       padding: 18px 0 28px;
@@ -89,25 +132,80 @@
       color: #555;
       font-size: 13px;
     }
-    .muted { color: #666; }
-    @media (max-width: 780px) {
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
       .btns { grid-template-columns: 1fr; }
-      .cards { grid-template-columns: 1fr; }
+      .cards2 { grid-template-columns: 1fr; }
       h1 { font-size: 28px; }
     }
   </style>
 
-  <!-- Schema.org -->
+  <!-- Schema.org: Organization + Product + FAQ (helps SEO & AI understanding) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Azuda",
-    "url": "https://azuda.co.uk/",
-    "sameAs": [
-      "https://www.ebay.co.uk/str/azudamodelrailwaytemplates",
-      "https://www.etsy.com/shop/AzudaShop",
-      "https://www.amazon.co.uk/s?me=A2LKKJ7E1N1BJ3&marketplaceID=A1F83G8C2ARO7P"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Azuda",
+        "url": "https://azuda.co.uk/",
+        "sameAs": [
+          "https://www.ebay.co.uk/str/azudamodelrailwaytemplates",
+          "https://www.etsy.com/shop/AzudaShop",
+          "https://www.amazon.co.uk/s?me=A2LKKJ7E1N1BJ3&marketplaceID=A1F83G8C2ARO7P"
+        ]
+      },
+      {
+        "@type": "Product",
+        "name": "OO Gauge Track Laying Radius Templates & 67mm Spacers Kit (2nd–5th radius)",
+        "description": "Practical 3D printed track-laying tools for accurate OO/HO curves and consistent 67mm parallel track spacing. Includes straight template, 2nd–5th radius curved templates, and 67mm double track spacing templates. Designed for active track laying with cut-outs for light pinning.",
+        "brand": { "@type": "Brand", "name": "Azuda" },
+        "category": "Model Railway Track Laying Tools",
+        "image": [
+          "https://azuda.co.uk/images/oo-radius-template-iso.jpg",
+          "https://azuda.co.uk/images/oo-radius-template-cutout-pinhole.jpg",
+          "https://azuda.co.uk/images/oo-radius-templates-kit-set.jpg"
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "offerCount": "3",
+          "offers": [
+            { "@type": "Offer", "url": "https://www.ebay.co.uk/str/azudamodelrailwaytemplates" },
+            { "@type": "Offer", "url": "https://www.etsy.com/shop/AzudaShop" },
+            { "@type": "Offer", "url": "https://www.amazon.co.uk/s?me=A2LKKJ7E1N1BJ3&marketplaceID=A1F83G8C2ARO7P" }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is included in the OO gauge 67mm spacing kit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A straight track template (straightener), 2nd–5th radius curved templates, and 67mm double track spacing templates configured for consistent parallel spacing on straights and curves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What track is it compatible with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Designed for OO/HO gauge (16.5mm) track. Works with Code 75 and Code 100 rail, and is likely compatible with Code 83 (not formally tested)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why use 67mm track spacing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "67mm is a commonly used OO gauge spacing for parallel tracks, especially on curves where reliable clearance matters. Consistent spacing improves appearance and running."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -118,87 +216,170 @@
     <header>
       <div class="brand">
         <div class="logo">Azuda</div>
-        <div class="tagline">Model Railway Templates</div>
+        <div class="tagline">OO/HO Track Laying Templates & Spacing Tools</div>
+      </div>
+
+      <div class="banner" aria-label="Azuda banner">
+        <img
+          src="images/azuda-ebay-banner.png"
+          alt="Azuda – high quality 3D printed model railway templates, guides and accessories"
+          loading="lazy"
+        />
       </div>
 
       <div class="hero">
-        <h1>Original model railway templates</h1>
+        <h1>OO Gauge track laying radius templates & 67mm spacers</h1>
         <p>
-          Azuda makes original model railway templates that are designed and used during real modelling projects.
-          Most designs started out as something we needed ourselves, then got improved through use to make them clearer
-          and more reliable at the workbench.
+          Practical 3D printed tools for accurate curves and consistent parallel track spacing on OO/HO (16.5mm) layouts.
+          Designed for <strong>active track laying</strong>: place, slide, reposition, and pin as you form and fix track.
         </p>
-        <p class="muted">
-          Browse the full range on our marketplace pages below.
+
+        <div class="pillrow" aria-label="Key compatibility points">
+          <span class="pill">OO / HO (16.5mm)</span>
+          <span class="pill">67mm parallel spacing</span>
+          <span class="pill">Code 75 & Code 100</span>
+          <span class="pill">Flexitrack & set-track transitions</span>
+          <span class="pill">Radii: 2nd–5th</span>
+        </div>
+
+        <p class="muted" style="margin-top:12px;">
+          Buy via your preferred marketplace:
         </p>
 
         <div class="btns" aria-label="Marketplace links">
           <a class="btn" href="https://www.ebay.co.uk/str/azudamodelrailwaytemplates" target="_blank" rel="noopener noreferrer">
-            <strong>Browse on eBay</strong>
-            <small>See the full Azuda range</small>
+            <strong>Buy on eBay</strong>
+            <small>Full catalogue + listings</small>
           </a>
 
           <a class="btn" href="https://www.etsy.com/shop/AzudaShop" target="_blank" rel="noopener noreferrer">
-            <strong>Browse on Etsy</strong>
-            <small>Selected Azuda templates available</small>
+            <strong>Buy on Etsy</strong>
+            <small>Selected designs + bundles</small>
           </a>
 
           <a class="btn" href="https://www.amazon.co.uk/s?me=A2LKKJ7E1N1BJ3&marketplaceID=A1F83G8C2ARO7P" target="_blank" rel="noopener noreferrer">
-            <strong>Browse on Amazon</strong>
-            <small>View Azuda templates on Amazon UK</small>
+            <strong>Buy on Amazon</strong>
+            <small>Amazon UK storefront</small>
           </a>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="about">
-        <h2>About Azuda</h2>
-        <p>
-          The aim is simple: make modelling jobs quicker and more accurate, without having to measure everything by hand every time.
-          These templates are meant to be practical tools you can use again and again, whether you’re just starting out or you’ve been modelling for years.
-        </p>
+      <section id="gallery">
+        <h2>Product photos</h2>
+        <p class="muted">Real photos of Azuda OO gauge track laying templates and the 67mm spacing kit.</p>
+
+        <div class="grid">
+          <figure class="card">
+            <img
+              src="images/oo-radius-template-iso.jpg"
+              alt="OO gauge track laying radius template on track – 4th radius 571.5mm (22½ inch) – Azuda"
+              loading="lazy"
+            />
+            <figcaption class="pad">
+              <strong>Single template</strong>
+              <div class="muted">Example: 4th radius (571.5mm / 22½&quot;) OO gauge curve template.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img
+              src="images/oo-radius-template-cutout-pinhole.jpg"
+              alt="OO gauge radius template cut-out for pinning track while forming curves – Azuda track laying tool"
+              loading="lazy"
+            />
+            <figcaption class="pad">
+              <strong>Cut-out for easier pinning</strong>
+              <div class="muted">Pin the track lightly while you work around a bend to stop it springing back.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img
+              src="images/oo-radius-templates-kit-set.jpg"
+              alt="OO gauge track laying radius templates and 67mm double track spacing templates kit – Azuda"
+              loading="lazy"
+            />
+            <figcaption class="pad">
+              <strong>Complete set / kit</strong>
+              <div class="muted">Radius templates plus 67mm double track spacing templates for parallel track.</div>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section id="why">
-        <h2>Why people buy Azuda templates</h2>
-        <div class="cards">
+      <section id="product">
+        <h2>OO Gauge Track Laying Radius Templates & 67mm Spacers Kit (2nd–5th radius)</h2>
+        <p>
+          <strong>Practical track-laying tools</strong> for accurate curves and consistent parallel track spacing.
+          This kit is configured to help achieve accurate <strong>67mm</strong> spacing on both straights and curves,
+          based on the latest Azuda spacing template design refined during real layout construction.
+        </p>
+
+        <h3>What’s included</h3>
+        <ul>
+          <li>1 × Straight track template (straightener)</li>
+          <li>1 × 2nd radius curved template – 438mm (17¼&quot;)</li>
+          <li>1 × 3rd radius curved template – 505mm (19⅞&quot;)</li>
+          <li>1 × 4th radius curved template – 571.5mm (22½&quot;)</li>
+          <li>1 × 5th radius curved template – 638mm (25⅛&quot;)</li>
+          <li>67mm double track spacing templates (2⅝&quot;) (sold in kit configurations)</li>
+        </ul>
+
+        <div class="cards2" style="margin-top:14px;">
           <div class="card">
-            <strong>Designed from real use</strong>
-            <p class="muted">Templates are created because we actually needed them during builds — then refined to work better.</p>
+            <div class="pad">
+              <strong>Designed for active track laying</strong>
+              <p class="muted">
+                These aren’t just static gauges. Integrated handles make them easy to place, slide along rails,
+                reposition, and keep control while forming flexitrack.
+              </p>
+            </div>
           </div>
           <div class="card">
-            <strong>More consistent results</strong>
-            <p class="muted">Helpful for repeatable markings and layout work where accuracy matters.</p>
-          </div>
-          <div class="card">
-            <strong>Saves time</strong>
-            <p class="muted">Less measuring and re-checking, more building.</p>
-          </div>
-          <div class="card">
-            <strong>Range keeps growing</strong>
-            <p class="muted">New designs get added as new modelling jobs come up.</p>
+            <div class="pad">
+              <strong>Consistent 67mm spacing on curves</strong>
+              <p class="muted">
+                Move spacing templates progressively along the track to hold the correct gap through bends,
+                improving clearance and the overall look of parallel runs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="products">
-        <h2>Products</h2>
-        <p>
-          We don’t list every product here because the range changes and keeps growing.
-          Our marketplace pages always show the latest catalogue and availability.
-        </p>
+      <section id="compatibility">
+        <h2>Compatibility</h2>
         <ul>
-          <li><a href="https://www.ebay.co.uk/str/azudamodelrailwaytemplates" target="_blank" rel="noopener noreferrer">View the full Azuda range on eBay</a></li>
-          <li><a href="https://www.etsy.com/shop/AzudaShop" target="_blank" rel="noopener noreferrer">Browse Azuda on Etsy</a></li>
-          <li><a href="https://www.amazon.co.uk/s?me=A2LKKJ7E1N1BJ3&marketplaceID=A1F83G8C2ARO7P" target="_blank" rel="noopener noreferrer">Browse Azuda on Amazon UK</a></li>
+          <li>Designed for <strong>OO / HO gauge (16.5mm)</strong> track</li>
+          <li>Ideal for <strong>flexitrack</strong> and set-track transitions</li>
+          <li>Works with <strong>Code 75</strong> and <strong>Code 100</strong> rail</li>
+          <li>Likely compatible with Code 83 (not formally tested)</li>
+          <li>Each curved/straight template approx. <strong>200mm length</strong> (not radius) for good control</li>
+        </ul>
+      </section>
+
+      <section id="quality">
+        <h2>3D printed quality</h2>
+        <p class="muted">
+          All items are 3D printed and inspected before dispatch. Minor cosmetic marks or light stringing may occasionally be present and can be removed if required. This does not affect accuracy or performance.
+        </p>
+      </section>
+
+      <section id="buy">
+        <h2>Buy Azuda templates</h2>
+        <ul>
+          <li><a href="https://www.ebay.co.uk/str/azudamodelrailwaytemplates" target="_blank" rel="noopener noreferrer">Azuda on eBay</a></li>
+          <li><a href="https://www.etsy.com/shop/AzudaShop" target="_blank" rel="noopener noreferrer">Azuda on Etsy</a></li>
+          <li><a href="https://www.amazon.co.uk/s?me=A2LKKJ7E1N1BJ3&marketplaceID=A1F83G8C2ARO7P" target="_blank" rel="noopener noreferrer">Azuda on Amazon UK</a></li>
         </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <p class="muted">
-          For product questions, the quickest way is to message via the marketplace listing.
+          For product questions, the quickest way is to message via the marketplace listing you plan to buy from.
         </p>
       </section>
     </main>
@@ -213,4 +394,3 @@
   </script>
 </body>
 </html>
-
