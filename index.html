@@ -1,8 +1,23 @@
+
 <!doctype html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M525DLZ7S0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M525DLZ7S0');
+  </script>
+
+  <!-- Google Search Console: create a property at search.google.com/search-console,
+       choose the "HTML tag" method, paste your token below and uncomment this line.
+  <meta name="google-site-verification" content="YOUR_TOKEN_HERE" />
+  -->
 
   <title>OO Gauge Track Laying Radius Templates & Track Spacers | Azuda</title>
   <meta name="description" content="Azuda makes 3D printed OO/HO track laying radius templates, track spacers and spacing guides. Practical tools for accurate curves, consistent parallel track spacing (including 67mm), and easier pinning during track laying." />
@@ -130,6 +145,37 @@
       margin-top: 10px;
     }
 
+    /* Trust bar */
+    .trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid #ececec;
+      font-size: 14px;
+      color: #333;
+    }
+    .trust b { color: #111; }
+    .stars { color: #e6a400; letter-spacing: 1px; }
+
+    /* Testimonials */
+    .quote .pad p { margin: 0; font-style: italic; color: #222; }
+    .quote .pad .who { margin-top: 8px; font-style: normal; font-size: 13px; color: #666; }
+
+    /* FAQ */
+    .faq details {
+      border: 1px solid #e6e6e6;
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px 14px;
+      margin-top: 10px;
+    }
+    .faq summary { font-weight: 600; cursor: pointer; }
+    .faq summary::-webkit-details-marker { color: #999; }
+    .faq details p { margin: 10px 0 2px; color: #444; }
+
     footer {
       margin-top: 18px;
       padding: 18px 0 28px;
@@ -199,10 +245,18 @@
           },
           {
             "@type": "Question",
+            "name": "Which radius do I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OO set-track radii run from tighter curves (1st radius, around 371mm) up to broad, realistic main-line curves. Tighter radii suit tabletop layouts, branch lines and sidings; broader radii suit larger boards and express running. Kits bundle four consecutive radii, so you can shape a natural flow from tighter to sweeping curves. If you are unsure, message us with your space and we will help."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "What track is it compatible with?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Designed for OO/HO gauge (16.5mm) track. Works with Code 75 and Code 100 rail, and is likely compatible with Code 83 (not formally tested)."
+              "text": "Designed for OO/HO gauge (16.5mm) track. Ideal for flexitrack and set-track transitions. Works with Code 75 and Code 100 rail, and is likely compatible with Code 83 (not formally tested)."
             }
           },
           {
@@ -210,7 +264,15 @@
             "name": "Do you sell 67mm track spacers?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Azuda spacing templates include options for 67mm parallel track spacing, useful on straights and through curves where clearance matters."
+              "text": "Yes. Azuda spacing templates include options for 67mm parallel track spacing, useful on straights and through curves where clearance matters. Other spacings are also available across the range."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 3D printed finish like?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every item is 3D printed on well-tuned machines and inspected before dispatch. You may occasionally see minor stringing or a small mark from the print brim, which is used to improve bed adhesion. It is purely cosmetic, easily removed, and does not affect the accuracy or performance of the template."
             }
           }
         ]
@@ -240,12 +302,13 @@
         <h1>OO Gauge Track Laying Radius Templates & Track Spacers</h1>
         <p>
           Azuda makes <strong>3D printed OO/HO (16.5mm) track laying templates</strong> and <strong>spacing tools</strong> designed for real modelling use.
-          Use them while forming track: place, slide, reposition, and (where applicable) pin lightly to maintain alignment as you work.
+          Shape flexitrack to smooth, accurate curves and hold consistent parallel spacing &mdash; without measuring every bend.
+          <strong>Integrated handles</strong> let you place, slide and reposition each template as you work, and cut-outs let you pin the track lightly so it holds its curve instead of springing back.
         </p>
 
         <div class="pillrow" aria-label="Key compatibility points">
           <span class="pill">OO / HO (16.5mm)</span>
-          <span class="pill">Track spacers & spacing templates</span>
+          <span class="pill">Integrated handles</span>
           <span class="pill">67mm spacing options</span>
           <span class="pill">Code 75 & Code 100</span>
           <span class="pill">Flexitrack friendly</span>
@@ -271,10 +334,66 @@
             <small>Amazon UK storefront</small>
           </a>
         </div>
+
+        <div class="trust" aria-label="Seller track record">
+          <span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b>100% positive</b> eBay feedback</span>
+          <span><b>1,300+</b> items sold</span>
+          <span>UK made &amp; inspected</span>
+          <span>Metric &amp; imperial markings</span>
+        </div>
       </div>
     </header>
 
     <main>
+      <section id="why">
+        <h2>Why modellers choose Azuda</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="pad">
+              <strong>Integrated handles</strong>
+              <p class="muted">Built-in handles let you grip, slide and reposition each template along the rails &mdash; modellers say it&rsquo;s far easier than flat gauges.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="pad">
+              <strong>True curves, no spring-back</strong>
+              <p class="muted">Form flexitrack to a consistent radius and pin it through the cut-outs so it holds its shape while you fix the trackbed.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="pad">
+              <strong>Consistent 67mm spacing</strong>
+              <p class="muted">Double-track spacing templates hold a reliable parallel gap on straights and through curves, for safe clearance and a tidy layout.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <h2>What modellers say</h2>
+        <p class="muted">A few words from verified eBay buyers &mdash; see all feedback on our <a href="https://www.ebay.co.uk/str/azudamodelrailwaytemplates?_tab=feedback" target="_blank" rel="noopener noreferrer">eBay shop</a>.</p>
+        <div class="grid">
+          <figure class="card quote">
+            <div class="pad">
+              <p>&ldquo;Unlike other track setting tools, these have handles making moving the pieces along easier. Measurements are in both metric and imperial.&rdquo;</p>
+              <div class="who">Verified eBay buyer</div>
+            </div>
+          </figure>
+          <figure class="card quote">
+            <div class="pad">
+              <p>&ldquo;These really help working with flexi track and keep the rails in perfect alignment and prevent overbending and damaging the rails. First class.&rdquo;</p>
+              <div class="who">Verified eBay buyer</div>
+            </div>
+          </figure>
+          <figure class="card quote">
+            <div class="pad">
+              <p>&ldquo;Integrated handles make moving around much easier than some. Good value for money &mdash; as good if not better than more expensive versions.&rdquo;</p>
+              <div class="who">Verified eBay buyer</div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
       <section id="gallery">
         <h2>Product photos</h2>
         <p class="muted">Examples of Azuda OO gauge radius templates and spacing tools (photos shown: a radius template, a pinning cut-out, and a complete kit/set).</p>
@@ -360,6 +479,44 @@
           <li>Works with <strong>Code 75</strong> and <strong>Code 100</strong> rail</li>
           <li>Likely compatible with Code 83 (not formally tested)</li>
         </ul>
+      </section>
+
+      <section id="faq" class="faq">
+        <h2>Frequently asked questions</h2>
+
+        <details>
+          <summary>Which radius do I need?</summary>
+          <p>
+            OO set-track radii run from tighter curves (1st radius, around 371mm) up to broad, realistic main-line curves.
+            Tighter radii suit tabletop layouts, branch lines and sidings; broader radii suit larger boards and express running.
+            Our kits bundle four consecutive radii so you can shape a natural flow from tighter to sweeping curves.
+            Not sure? Message us with your space and we&rsquo;ll help you choose.
+          </p>
+        </details>
+
+        <details>
+          <summary>What is 67mm track spacing, and why does it matter?</summary>
+          <p>
+            67mm is a commonly used gap between parallel OO gauge tracks, giving reliable clearance for passing stock &mdash; particularly on curves.
+            Keeping the spacing consistent improves both the look of the layout and smooth running. Our spacing templates hold that gap accurately on straights and through bends.
+          </p>
+        </details>
+
+        <details>
+          <summary>Will they work with my track?</summary>
+          <p>
+            They&rsquo;re designed for OO/HO gauge (16.5mm) track and are ideal for flexitrack and set-track transitions.
+            They work with Code 75 and Code 100 rail, and are very likely compatible with Code 83 (not formally tested).
+          </p>
+        </details>
+
+        <details>
+          <summary>What is the 3D printed finish like?</summary>
+          <p>
+            Every item is 3D printed on well-tuned machines and inspected before dispatch.
+            You may occasionally see minor stringing or a small mark from the print brim (used to improve bed adhesion) &mdash; it&rsquo;s purely cosmetic, easily removed, and never affects accuracy or performance.
+          </p>
+        </details>
       </section>
 
       <section id="quality">
